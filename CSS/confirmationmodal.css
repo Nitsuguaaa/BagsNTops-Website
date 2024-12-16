@@ -1,0 +1,95 @@
+#confirmation-screen {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Higher priority */
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Background overlay */
+    
+    font-family: 'NimbusSan';
+    font-size: 20px;
+}
+
+#confirmation-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;  /* Increased width for more space */
+    height: auto;  /* Auto height to accommodate content */
+    padding: 20px;  /* Added padding to prevent overflow */
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: transparent; /* Make the background transparent */
+    box-sizing: border-box;  /* Prevent padding from causing overflow */
+}
+
+#delete-prompt {
+    margin: 0;
+    padding: 20px 20px;
+    width: 100%;  /* Use full width */
+    background-color: white;
+    text-align: center; /* Center the text */
+    border-radius: 5px;
+    margin-bottom: 20px;  /* Space between text and buttons */
+    margin-left: 29.5%;
+}
+
+.confirmation-content {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    animation: pop 0.2s linear 1; /* Animation for confirmation box */
+}
+
+#confirmation-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* Vertically center the buttons */
+    width: 100%;  /* Ensure it takes full width */
+    gap: 20px;  /* Adds space between the buttons */
+    margin-top: 10px;  /* Space between the prompt and the buttons */
+}
+
+#confirmation-screen button {
+    padding: 10px 30px; /* Adjusted padding */
+    border: none;
+    border-radius: 5px;
+    font-family: 'NimbusSan';
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#confirmation-screen button:hover {
+    color: white;
+    background-color: #e27c97;
+    transition: 0.3s; /* Reduced transition time for faster hover effect */
+}
+
+@keyframes pop {
+    0% { transform: scale(0.8); opacity: 0; }
+    50% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@font-face {
+    font-family: Recoleta;
+    src: url(/RSC/fonts/Recoleta-RegularDEMO.otf);
+}
+
+@font-face {
+    font-family: NimbusSan;
+    src: url(/RSC/fonts/NimbusSanL-Reg.otf);
+}
+
+@font-face {
+    font-family: NimbusSanIta;
+    src: url(/RSC/fonts/NimbusSanL-RegIta.otf);
+}
+
+@font-face {
+    font-family: NimbusSanBol;
+    src: url(/RSC/fonts/NimbusSanL-Bol.otf);
+}

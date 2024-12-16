@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+body {
+    background-color: #fffff0;
+}
+
+#wrapper {
+    display: flex;
+    position: relative;
+}
+
+
+#wrapper #sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: #E27C97;
+    padding: 30px 0;
+}
+
+#wrapper #sidebar h2 {
+    font-family: Recoleta;
+    color: white;
+    padding-left: 30px;
+    font-weight: 50;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+#wrapper #sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+#wrapper #sidebar ul li a {
+    font-family: NimbusSanBol;
+    color: #FFBACB;
+    display: block;
+    font-size: 20px;
+    
+}
+
+#wrapper #sidebar ul li:hover {
+    background: #FFBACB;
+    cursor: pointer;
+}
+
+#wrapper #sidebar ul li:hover a {
+    color:#fff;
+}
+
+#wrapper #sidebar ul li a img {
+    width: 25px;
+    padding-right: 8px;
+}
+
+#wrapper #main {
+    width: 100%;
+    margin-left: 250px;
+    background-color: #fffff0;
+}
+
+#wrapper #main header {
+    font-family: Recoleta;
+    font-size: 30px;
+    padding: 30px;
+    margin-left: 50px;
+    color: #fff;
+}
+
+#pagetitle {
+    border-radius: 10px;
+    background-color: #E27C97;
+    width: 270px;
+    text-align: center;
+}
+
+#btn  {
+    padding: 20px;
+    display: flex;
+    float: right;
+    padding-right: 50px;
+}
+
+#add-btn {
+    font-size: 25px;
+    color: #fff;
+    background-color: #E27C97;
+    font-family: "Recoleta";
+    border: 0;
+    padding: 10px;
+}
+
+
+#content-table {
+    border-collapse: collapse;
+    margin: 90px 0 0 30px;
+    font-size: 20px;
+    width: 1600px;
+    max-height: 1020px;
+    border: 1px solid black;
+
+
+}
+
+#content-table thead tr {
+    color: black;
+    font-family: Recoleta;
+    text-align: center;
+}
+
+#content-table th,
+#content-table td {
+    padding: 12px 15px;
+}
+
+#content-table td {
+    text-align: right;
+}
+
+#content-table td:last-child {
+    text-align: center;
+    width: 150px;
+    
+}
+
+#content-table #action-btns{
+    background-color: transparent;
+    border: none;
+    padding-left: 20px;
+    
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+label {
+    text-align: right;
+    width: 80px;
+}
+
+@font-face {
+    font-family: Recoleta;
+    src: url(/RSC/fonts/Recoleta-RegularDEMO.otf);
+}
+
+@font-face {
+    font-family: NimbusSanBol;
+    src: url(/RSC/fonts/NimbusSanL-Bol.otf);
+}
+
+.modal-bg {
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+.details-box {
+    width: 1080px;
+    height: 700px;
+    position: relative;
+    margin: 5% auto;
+    background: #fffff0;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 3px solid #E27C97;
+    font-family: "Recoleta";
+    padding: 20px 20px 20px 35px;
+}
+
+.top-head header {
+    font-size: 40px;
+}
+
+.top-head span{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#details-table {
+    border-collapse: collapse;
+    margin: 20px 0 0 30px;
+    font-size: 20px;
+    width: 950px;
+    max-height: 500px;
+}
+
+#details-table th,
+#details-table td {
+    padding: 12px 15px;
+}
+
+#details-table td {
+    text-align: right;
+}
+
+.edit-customer-box {
+    width: 900px;
+    height: 250px;
+    position: relative;
+    margin: 10% auto;
+    background: #fffff0;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 3px solid #E27C97;
+    font-family: "Recoleta";
+    padding: 20px 20px 20px 35px;
+}
+
+.cs-input-group {
+    position: absolute;
+    width: 820px;
+}
+
+.cs-input-field {
+
+    padding: 10px 0;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 3px;
+    margin-right: 20px;
+    border: 1px solid gray;
+    outline: none;
+    background: transparent;
+    border-radius: 10px;
+    width: 70%;
+    float: right;
+}
+
+.submit-btn {
+    width: 20%;
+    margin-left: 40%;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    background: #e27e97;
+    outline: none;
+    font-family: "Recoleta";
+    color: #fff;
+    border: none;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.product-details-box {
+    width: 700px;
+    height: 400px;
+    position: relative;
+    margin: 10% auto;
+    background: #fffff0;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 3px solid #E27C97;
+    font-family: "Recoleta";
+    padding: 20px 20px 20px 35px;
+}
+
+#product-description {
+    resize: none;
+}
+
+#product-price::-webkit-outer-spin-button,
+#product-price::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#label-holder {
+    width: 25%;
+    float: left;
+    padding-top: 20px;
+    text-align: right;
+}
+
+#product-id-holder {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.form-image {
+    background-color: #E27C97;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 20px;
+}

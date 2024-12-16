@@ -1,0 +1,501 @@
+html, body {
+    width: 1920px;
+    margin: 0 0 0 -5px;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.partone {
+    background: linear-gradient(162deg, rgba(184,196,95,1) 0%, rgba(196,49,153,1) 28%, rgba(181,16,158,1) 53%, rgba(255,0,112,1) 76%, rgba(244,0,255,1) 97%);
+    height: 900px;
+    padding: 20px;
+}
+
+
+.partone header {
+    display: flex;
+    padding-right: 50px;
+}
+
+.top-bar {
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar-1 {
+    width: 25%;
+    float: left;
+    text-align: left;
+}
+
+.tb-1-title {
+    padding: 30px 16px;
+    margin-left: 100px;
+    font-size: 25px;
+    font-family: "Recoleta";
+    color: white;
+}
+
+.top-bar-2 {
+    width: 45%;
+    float: left;
+    margin: 0px;
+}
+
+.top-bar-3 {
+    width: 30%;
+    float: left;
+    margin: 0px;
+    text-align: right;
+}
+
+.nav-bar {
+    list-style-type: none;
+    overflow: hidden;
+    margin-left: 150px;
+}
+
+.nav-bar-2 {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.nav-bar li {
+    float: left;
+    font-size: 25px;
+    font-family: "NimbusSan";
+    margin-right: 100px;
+}
+
+.nav-bar-2 li {
+    float: right;
+    font-size: 25px;
+}
+
+.nav-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    border-radius: 3px;
+}
+
+.nav-bar-2 li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    border-radius: 3px;
+}
+
+.nav-bar li a:hover {
+    background-color: #fffff0;
+    color: #e27c97;
+    border-radius: 20px;
+}
+
+.nav-bar-2 li a:hover {
+    background-color: #f0668b;
+    border-radius: 20px;
+}
+
+.nav-bar-2 li button {
+    transition-duration: 0.4s;
+    padding: 2px 15px 15px 10px;
+    border: none;
+    background: none;
+}
+
+.nav-bar-2 li button:hover {
+    background-color: #f0668b;
+    border-radius: 20px;
+    cursor: pointer;   
+}
+
+.main-content {
+    float: left;
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+.mc-side-pic {
+    float: left;
+    margin-left: 210px;
+    width: 30%;
+
+}
+
+.mc-side-content {
+    float:left;
+    width: 50%;
+}
+
+.mc-sc-title {
+    font-size: 90px;
+    font-family: "Recoleta";
+    color: white;
+}
+
+.mc-sc-subtext {
+    font-size: 20px;
+    font-family: "NimbusSanIta";
+    color: white;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+.mc-sc-start {
+    margin-top: 50px;
+    border: none;
+    background-color: #ffbacb;
+    font-size: 20px;
+    font-family: "NimbusSanBol";
+    color: white;
+    padding: 14px 16px;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+.mc-sc-start:hover {
+    background-color: #fffff0;
+    color: #e27c97;
+    cursor: pointer;
+}
+
+.mc-sc-followtext {
+    font-size: 18px;
+    font-family: "NimbusSan";
+    color: white;
+    margin-top: 70px;
+}
+
+
+.bottom-logo-roll {
+    float: left;
+    margin-top: 110px;
+    border-radius: 4px;
+}
+
+.scrolling-img-inner {
+    display: flex;
+    white-space: nowrap;
+    padding: 20px 0;
+}
+
+.scrolling-img {
+    display: flex;
+}
+
+.scrolling-img-item{
+    padding: 0 35px;
+}
+
+.scrolling-img-inner > div {
+    animation: var(--direction) var(--marquee-speed) linear infinite;
+}
+
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+.parttwo {
+    background-color: #fffff0;
+    background-image: url("/RSC/home-page/landing_page_2.png");
+    margin-left: 10px;
+    padding: 30px;
+    height: 880px;
+    padding-right: 50px;
+}
+
+.parttwo header {
+    margin: 0 0 50px 30px;
+    font-family: "Recoleta";
+    font-size: 100px;
+    color: #e27c97;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    width: 600px;
+    height: 550px;
+    margin: 10px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px #888888;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.item h1 {
+    font-family: "NimbusSanBol";
+    font-size: 40px;
+}
+
+.item p {
+    font-family: "NimbusSan";
+    font-size: 30px;
+}
+
+.partthree {
+    background: linear-gradient(162deg, rgba(184,196,95,1) 0%, rgba(196,49,153,1) 28%, rgba(181,16,158,1) 53%, rgba(255,0,112,1) 76%, rgba(244,0,255,1) 97%);
+    height: 900px;
+    padding: 20px;
+    display: flex;
+}
+
+
+.partthree .nav-bar li {
+    margin-top: 25px;
+    margin-left: -10px;
+}
+
+.partthree main {
+    margin-top: -10px;
+}
+
+.partthree aside {
+    float: left;
+    margin: -20px;
+}
+
+.partthree .main-content {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: block;
+}
+
+.partthree h1 {
+    font-family: Recoleta;
+    text-align: right;
+    font-size: 150px;
+    color: white;
+    margin-right: 40px;
+}
+
+.partthree p {
+    font-family: "Arial";
+    text-align: right;
+    font-size: 30px;
+    color: white;
+    margin-right: 40px;
+    margin-top: -20px;
+}
+
+@font-face {
+    font-family: Recoleta;
+    src: url(/RSC/fonts/Recoleta-RegularDEMO.otf);
+}
+
+@font-face {
+    font-family: NimbusSan;
+    src: url(/RSC/fonts/NimbusSanL-Reg.otf);
+}
+
+@font-face {
+    font-family: NimbusSanIta;
+    src: url(/RSC/fonts/NimbusSanL-RegIta.otf);
+}
+
+@font-face {
+    font-family: NimbusSanBol;
+    src: url(/RSC/fonts/NimbusSanL-Bol.otf);
+}
+
+#logout-screen {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+}
+
+#logout-box {
+    width: 100px;
+    position: absolute;
+    /*margin-top: 85px;
+    margin-left: 1750px;*/
+    background: #fffff0;
+
+    overflow: hidden;
+    border-radius: 15px;
+    animation: pop 0.3s linear 1;
+}
+
+
+#logoutBtn {
+    width: inherit;
+    height: inherit;
+    border-radius: 13px;
+    border: none;
+    cursor: pointer;
+    background-color: #f0668b;
+    font-family: "NimbusSanBol";
+    color: white;
+
+}
+
+#logoutBtn:hover {
+    background-color: white;
+    color: #f0668b;
+    transition: 0.5s;
+}
+
+.modal-bg {
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+}
+
+.form-box {
+    width: 700px;
+    height: 500px;
+    position: relative;
+    margin: 6% auto;
+    background: #fffff0;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 15px;
+    
+}
+
+@keyframes pop{
+    50%  {transform: scale(1.2);}
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+.button-box {
+    width: 240px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    font-family: "NimbusSanBol";
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #e27e97;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.input-group {
+    top: 120px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field {
+    width: 550px;
+    padding: 10px 0;
+    margin-top: 5px;
+    margin-left: 50px;
+    border: 1px solid black;
+    outline: none;
+    background: transparent;
+}
+
+label {
+    margin-left: 50px;
+    font-family: "NimbusSanBol";
+    font-size: 12px;
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin-left: 70%;
+    background: #e27e97;
+    outline: none;
+    font-family: "NimbusSanBol";
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+#loginForm {
+    left: 50px;
+}
+
+#signupForm {
+    left: 1050px;
+}
